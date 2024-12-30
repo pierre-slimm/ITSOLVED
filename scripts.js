@@ -309,3 +309,17 @@
         includeHTML();
     });
 })();
+document.querySelectorAll('[data-include]').forEach(element => {
+    const includePath = element.getAttribute('data-include');
+    fetch(includePath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Failed to fetch ${includePath}: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(data => {
+            element.outerHTML = data;
+        })
+        .catch(error => console.error('Error loading include:', error));
+});
