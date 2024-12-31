@@ -14,21 +14,25 @@ body {
 
 header {
     position: relative;
-    padding: 20px 40px; 
-    background-color: #1550a8; 
+    padding: 30px 50px; 
+    background-color: #343455; 
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: flex-end; 
+    justify-content: space-between; /* Space between logo and other elements */
 }
 
-/* Header Title */
-header h1 {
-    margin-right: auto; 
-    font-size: 2rem;
-   
+.logo-container {
+    flex-shrink: 0;
+    margin-right: auto; /* Push other elements to the right */
 }
 
+/* Logo styling */
+.logo {
+    height: 100px; /* Adjust size as needed */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it's treated as a block-level element */
+}
 
 
 
