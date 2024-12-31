@@ -602,6 +602,13 @@ article p {
 /* Footer Styles */
 
 /* General Footer Styles */
+/* Define primary and light colors (optional) */
+:root {
+    --primary: #008bb5; /* Example primary color */
+    --light: #ffffff; /* Light color for text */
+}
+
+/* Footer Styling */
 footer {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
@@ -656,7 +663,7 @@ footer .btn-primary {
 }
 
 footer .btn-primary:hover {
-    background-color: darken(var(--primary), 10%);
+    background-color: #007299; /* Adjusted hover color for primary */
     transform: translateY(-2px);
 }
 
@@ -709,5 +716,10 @@ footer .bg-primary a:hover {
 
     footer h3 {
         text-align: center;
+    }
+
+    .footer-container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
