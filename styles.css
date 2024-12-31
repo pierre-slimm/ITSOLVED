@@ -465,6 +465,19 @@ article p {
 .back-link:hover {
     text-decoration: underline;
 }
+.next-trend-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+    float: right;
+}
+
+.next-trend-link:hover {
+    text-decoration: underline;
+}
+
 
 /* Footer Styles */
 
