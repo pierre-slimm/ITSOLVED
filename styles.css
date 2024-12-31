@@ -283,6 +283,122 @@ nav .nav-links li a:hover {
         font-size: 0.9rem;
     }
 }
+/* About Section Styling */
+.container-fluid {
+    background-color: #f8f9fa; /* Light background for better contrast */
+    padding-top: 3rem; /* Top padding */
+    padding-bottom: 3rem; /* Bottom padding */
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.col-lg-5 {
+    position: relative;
+    min-height: 500px;
+    /* Ensures the column takes up enough space for the image */
+}
+
+.col-lg-7 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative; /* Ensure the image is positioned inside the parent container */
+}
+
+h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #007bff;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.row.g-3 {
+    margin-top: 2rem;
+}
+
+.col-sm-6 {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-primary {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 200px;
+}
+
+.bg-secondary {
+    background-color: #f8f9fa;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 200px;
+}
+
+.bg-primary .fa, .bg-secondary .fa {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.bg-primary h4, .bg-secondary h4 {
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.bg-primary .text-white {
+    color: #fff;
+}
+
+.bg-secondary .text-dark {
+    color: #333;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 991px) {
+    .col-lg-5 {
+        margin-bottom: 2rem;
+    }
+    .col-lg-7 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 
 /* Trend Section Styling */
 #trending {
